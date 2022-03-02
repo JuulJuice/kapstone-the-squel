@@ -50,6 +50,61 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="0ug-vE-H39">
+            <objects>
+                <viewController id="DU1-ac-4mj" customClass="ViewController" customModule="kapstone_the_squel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jhl-xT-jFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="{BRACKETS}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBM-YR-1oq">
+                                <rect key="frame" x="68" y="244" width="278" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXw-Ca-mWq">
+                                <rect key="frame" x="170" y="422" width="75" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wm-vu-8Ek">
+                                <rect key="frame" x="178" y="510" width="60" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A3e-ii-iQh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Efg-JF-iaL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2uj-9l-HAV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.86956521739137" y="-641.51785714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RGP-R7-5td">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xnc-FU-99f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uZw-dD-9Md">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DU1-ac-4mj" kind="relationship" relationship="rootViewController" id="QUx-ui-NOD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMs-zr-aJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="-642.1875"/>
+        </scene>
     </scenes>
     <resources>
         <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
