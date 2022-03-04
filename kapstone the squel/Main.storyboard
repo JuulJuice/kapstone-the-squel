@@ -137,6 +137,51 @@
             </objects>
             <point key="canvasLocation" x="1002.8985507246377" y="55.580357142857139"/>
         </scene>
+        <!--Root View Controller-->
+        <scene sceneID="QPx-zV-3dN">
+            <objects>
+                <tableViewController id="Vtz-Z9-xyI" customClass="TournamentTableViewController" customModule="kapstone_the_squel" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="pK7-gm-wRf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tourney" id="did-i9-9Sx">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="did-i9-9Sx" id="DVs-RH-Otd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vtz-Z9-xyI" id="jfi-yS-IWD"/>
+                            <outlet property="delegate" destination="Vtz-Z9-xyI" id="zt3-Fa-qzo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="fJh-jS-l9z"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7a-dk-m5k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2594" y="61"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z6a-QJ-PbU">
+            <objects>
+                <navigationController id="Zmc-mP-Dzc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="abX-fb-rNd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vtz-Z9-xyI" kind="relationship" relationship="rootViewController" id="y7I-TI-zgK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzd-fP-HxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704" y="60"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="RGP-R7-5td">
             <objects>
