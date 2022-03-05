@@ -9,13 +9,21 @@ import UIKit
 
 class TournamentTableViewController: UITableViewController {
 
+    @IBOutlet var tourneyTable: UITableView!
+   
+    var tourneys = [listOfTournaments]()
     
-    var tourneys:[Tournament] = [Tournament(name: "Test", description: "Test Description", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM"))
-        ]
+    var everyone = [listOfTournaments(type: "Everyone", tournaments: [Tournament(name: "Test1", description: "Test Description 1", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM")), Tournament(name: "Test2", description: "Test Description 2", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM"))])]
     
+    var mature = [listOfTournaments(type: "Mature", tournaments: [Tournament(name: "Test1", description: "Test Description 1", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM")), Tournament(name: "Test2", description: "Test Description 2", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM"))])]
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //tourneyTable.dataSource = self
+        //tourneyTable.delegate = self
+        tourneys.append(contentsOf: everyone)
+        tourneys.append(contentsOf: mature)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,24 +35,42 @@ class TournamentTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return tourneys.count
+       
+         return tourneys.count
+
+        
+
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        tourneys[section].tournaments.count
     }
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tourney", for: indexPath)
+     
+        let announce2 = tourneys[indexPath.section].tournaments[indexPath.section]
+        //let announce2 = tourneys.section[indexPath.row]
+       
+        cell.textLabel?.text = (announce2.name)
+        cell.detailTextLabel?.text = announce2.description
+        cell.imageView?.image = announce2.image
 
+
+        
         // Configure the cell...
 
         return cell
     }
     
-
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let announce = tourneys[section]
+        
+        return announce.type
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

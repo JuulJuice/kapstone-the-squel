@@ -8,9 +8,23 @@
 import Foundation
 import UIKit
 
+struct listOfTournaments
+{
+    var type:String
+    var tournaments:[Tournament]
+
+}
+
+
+
+
 struct Tournament
 {
     var name:String
     var description:String
     var image:UIImage
+    
+   
 }
+
+
