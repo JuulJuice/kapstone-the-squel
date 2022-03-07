@@ -52,7 +52,7 @@ class TournamentTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tourney", for: indexPath)
      
-        let announce2 = tourneys[indexPath.section].tournaments[indexPath.section]
+        let announce2 = tourneys[indexPath.section].tournaments[indexPath.row]
         //let announce2 = tourneys.section[indexPath.row]
        
         cell.textLabel?.text = (announce2.name)
@@ -70,6 +70,10 @@ class TournamentTableViewController: UITableViewController {
         let announce = tourneys[section]
         
         return announce.type
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showdetail", sender: self)
     }
     /*
     // Override to support conditional editing of the table view.
@@ -106,14 +110,21 @@ class TournamentTableViewController: UITableViewController {
     }
     */
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? TournamentsDetailsViewController {
+            destination.allTourneys = tourneys[(tourneyTable.indexPathForSelectedRow?.section)!]
+            destination.indexpath = tourneyTable.indexPathForSelectedRow?.row ?? 0
+            tourneyTable.deselectRow(at: tourneyTable.indexPathForSelectedRow!, animated: true)
     }
-    */
+        
+        
+    }
+
 
 }
