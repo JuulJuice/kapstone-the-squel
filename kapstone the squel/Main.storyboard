@@ -227,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TMS-7A-WIB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3507" y="46"/>
+            <point key="canvasLocation" x="3457" y="56"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z6a-QJ-PbU">
@@ -324,9 +324,6 @@
                                         <rect key="frame" x="0.0" y="348" width="352" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Login"/>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="JBq-bb-xgQ"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOa-fg-w6a">
                                         <rect key="frame" x="0.0" y="447" width="352" height="42"/>
@@ -438,6 +435,9 @@
                                         <rect key="frame" x="0.0" y="423" width="352" height="51"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="Iit-57-PnO"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcf-U6-xfP">
                                         <rect key="frame" x="0.0" y="479" width="352" height="69.5"/>

@@ -15,6 +15,12 @@ class TournamentTableViewController: UITableViewController {
     
     var everyone = [listOfTournaments(type: "Everyone", tournaments: [Tournament(name: "Test1", description: "Test Description 1", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM")), Tournament(name: "Test2", description: "Test Description 2", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM"))])]
     
+    var everyoneTen = [listOfTournaments(type: "EveryoneTen", tournaments: [Tournament(name: "Test1", description: "Test Description 1", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM")), Tournament(name: "Test2", description: "Test Description 2", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM"))])]
+    
+    var teen = [listOfTournaments(type: "Teen", tournaments: [Tournament(name: "Test1", description: "Test Description 1", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM")), Tournament(name: "Test2", description: "Test Description 2", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM"))])]
+    
+    
+    
     var mature = [listOfTournaments(type: "Mature", tournaments: [Tournament(name: "Test1", description: "Test Description 1", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM")), Tournament(name: "Test2", description: "Test Description 2", image: #imageLiteral(resourceName: "Screen Shot 2022-02-28 at 3.43.55 PM"))])]
 
     override func viewDidLoad() {
@@ -22,6 +28,8 @@ class TournamentTableViewController: UITableViewController {
         //tourneyTable.dataSource = self
         //tourneyTable.delegate = self
         tourneys.append(contentsOf: everyone)
+        tourneys.append(contentsOf: everyoneTen)
+        tourneys.append(contentsOf: teen)
         tourneys.append(contentsOf: mature)
         
         // Uncomment the following line to preserve selection between presentations
