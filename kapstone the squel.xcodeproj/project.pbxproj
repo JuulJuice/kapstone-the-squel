@@ -15,6 +15,7 @@
 		5B94454227D2766500719A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B94454127D2766500719A2E /* Main.storyboard */; };
 		5B94454427D2B28B00719A2E /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94454327D2B28B00719A2E /* Tournament.swift */; };
 		5B94454627D2B2F800719A2E /* TournamentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94454527D2B2F800719A2E /* TournamentTableViewController.swift */; };
+		5BED29BE27D6562500DF4EB0 /* TournamentsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29BD27D6562500DF4EB0 /* TournamentsDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5B94454127D2766500719A2E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5B94454327D2B28B00719A2E /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
 		5B94454527D2B2F800719A2E /* TournamentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentTableViewController.swift; sourceTree = "<group>"; };
+		5BED29BD27D6562500DF4EB0 /* TournamentsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				27015D9B27CD2C4200C9B9C3 /* SceneDelegate.swift */,
 				27015D9D27CD2C4200C9B9C3 /* ViewController.swift */,
 				5B94454127D2766500719A2E /* Main.storyboard */,
+				5BED29BD27D6562500DF4EB0 /* TournamentsDetailsViewController.swift */,
 				5B94454527D2B2F800719A2E /* TournamentTableViewController.swift */,
 				27015DA227CD2C4300C9B9C3 /* Assets.xcassets */,
 				5B94454327D2B28B00719A2E /* Tournament.swift */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BED29BE27D6562500DF4EB0 /* TournamentsDetailsViewController.swift in Sources */,
 				5B94454427D2B28B00719A2E /* Tournament.swift in Sources */,
 				27015D9E27CD2C4200C9B9C3 /* ViewController.swift in Sources */,
 				5B94454627D2B2F800719A2E /* TournamentTableViewController.swift in Sources */,
