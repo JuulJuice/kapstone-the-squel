@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147B254F27D89EB100EE5F70 /* UserSuggestedTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B254E27D89EB100EE5F70 /* UserSuggestedTableVC.swift */; };
+		147B255127D8E41100EE5F70 /* UserSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B255027D8E41100EE5F70 /* UserSuggestions.swift */; };
 		27015D9A27CD2C4200C9B9C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27015D9927CD2C4200C9B9C3 /* AppDelegate.swift */; };
 		27015D9C27CD2C4200C9B9C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27015D9B27CD2C4200C9B9C3 /* SceneDelegate.swift */; };
 		27015D9E27CD2C4200C9B9C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27015D9D27CD2C4200C9B9C3 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		147B254E27D89EB100EE5F70 /* UserSuggestedTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSuggestedTableVC.swift; sourceTree = "<group>"; };
+		147B255027D8E41100EE5F70 /* UserSuggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSuggestions.swift; sourceTree = "<group>"; };
 		27015D9627CD2C4200C9B9C3 /* kapstone the squel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kapstone the squel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27015D9927CD2C4200C9B9C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27015D9B27CD2C4200C9B9C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				27015D9B27CD2C4200C9B9C3 /* SceneDelegate.swift */,
 				27015D9D27CD2C4200C9B9C3 /* ViewController.swift */,
 				5B94454127D2766500719A2E /* Main.storyboard */,
+				147B255027D8E41100EE5F70 /* UserSuggestions.swift */,
+				147B254E27D89EB100EE5F70 /* UserSuggestedTableVC.swift */,
 				5BED29BD27D6562500DF4EB0 /* TournamentsDetailsViewController.swift */,
 				5B94454527D2B2F800719A2E /* TournamentTableViewController.swift */,
 				27015DA227CD2C4300C9B9C3 /* Assets.xcassets */,
@@ -149,10 +155,12 @@
 			files = (
 				5BED29BE27D6562500DF4EB0 /* TournamentsDetailsViewController.swift in Sources */,
 				5B94454427D2B28B00719A2E /* Tournament.swift in Sources */,
+				147B255127D8E41100EE5F70 /* UserSuggestions.swift in Sources */,
 				27015D9E27CD2C4200C9B9C3 /* ViewController.swift in Sources */,
 				5B94454627D2B2F800719A2E /* TournamentTableViewController.swift in Sources */,
 				27015D9A27CD2C4200C9B9C3 /* AppDelegate.swift in Sources */,
 				27015D9C27CD2C4200C9B9C3 /* SceneDelegate.swift in Sources */,
+				147B254F27D89EB100EE5F70 /* UserSuggestedTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
