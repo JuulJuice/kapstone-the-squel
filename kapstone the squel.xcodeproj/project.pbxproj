@@ -14,6 +14,7 @@
 		27015D9E27CD2C4200C9B9C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27015D9D27CD2C4200C9B9C3 /* ViewController.swift */; };
 		27015DA327CD2C4300C9B9C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27015DA227CD2C4300C9B9C3 /* Assets.xcassets */; };
 		27015DA627CD2C4300C9B9C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27015DA427CD2C4300C9B9C3 /* LaunchScreen.storyboard */; };
+		5B7F8B4427D9454600204126 /* AddEdiitSuggestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7F8B4327D9454600204126 /* AddEdiitSuggestionsTableViewController.swift */; };
 		5B94454227D2766500719A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B94454127D2766500719A2E /* Main.storyboard */; };
 		5B94454427D2B28B00719A2E /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94454327D2B28B00719A2E /* Tournament.swift */; };
 		5B94454627D2B2F800719A2E /* TournamentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94454527D2B2F800719A2E /* TournamentTableViewController.swift */; };
@@ -30,6 +31,7 @@
 		27015DA227CD2C4300C9B9C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27015DA527CD2C4300C9B9C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27015DA727CD2C4300C9B9C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B7F8B4327D9454600204126 /* AddEdiitSuggestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEdiitSuggestionsTableViewController.swift; sourceTree = "<group>"; };
 		5B94454127D2766500719A2E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5B94454327D2B28B00719A2E /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
 		5B94454527D2B2F800719A2E /* TournamentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentTableViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				27015D9B27CD2C4200C9B9C3 /* SceneDelegate.swift */,
 				27015D9D27CD2C4200C9B9C3 /* ViewController.swift */,
 				5B94454127D2766500719A2E /* Main.storyboard */,
+				5B7F8B4327D9454600204126 /* AddEdiitSuggestionsTableViewController.swift */,
 				147B255027D8E41100EE5F70 /* UserSuggestions.swift */,
 				147B254E27D89EB100EE5F70 /* UserSuggestedTableVC.swift */,
 				5BED29BD27D6562500DF4EB0 /* TournamentsDetailsViewController.swift */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7F8B4427D9454600204126 /* AddEdiitSuggestionsTableViewController.swift in Sources */,
 				5BED29BE27D6562500DF4EB0 /* TournamentsDetailsViewController.swift in Sources */,
 				5B94454427D2B28B00719A2E /* Tournament.swift in Sources */,
 				147B255127D8E41100EE5F70 /* UserSuggestions.swift in Sources */,
