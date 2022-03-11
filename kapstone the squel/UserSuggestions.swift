@@ -11,6 +11,6 @@ struct Suggestions{
     var gameName: String
     var rating: String
     var image: UIImage
-    var link: String
+    var genre: String
 }
 
