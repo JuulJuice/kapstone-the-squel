@@ -7,10 +7,11 @@
 
 import UIKit
 
-class AddEdiitSuggestionsTableViewController: UITableViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddEdiitSuggestionsTableViewController: UITableViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate,  UIPickerViewDelegate, UIPickerViewDataSource {
     
     var suggest:Suggestions?
     
+    @IBOutlet weak var gameGenre: UIPickerView!
     @IBOutlet weak var gameLink: UITextField!
     @IBOutlet weak var gameRating: UITextField!
     @IBOutlet weak var gameName: UITextField!
@@ -26,7 +27,8 @@ class AddEdiitSuggestionsTableViewController: UITableViewController,  UIImagePic
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+    var pickerData: [String] = [String]()
+
     @IBAction func cameraButtonTapped(_ sender: UIButton) {
         
         let imagePicker = UIImagePickerController()
@@ -72,20 +74,36 @@ class AddEdiitSuggestionsTableViewController: UITableViewController,  UIImagePic
             dismiss(animated: true, completion: nil)
     }
     
-
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+        
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
     override func viewDidLoad() {
+        pickerData = ["Sandbox", "Shooters", "Multiplayer online battle arena (MOBA)", "Simulation", "Sports", "Action"]
+        gameGenre.delegate = self
+        gameGenre.dataSource = self
         if let suggest = suggest { gameName.text = suggest.gameName
             gameRating.text = suggest.rating
             imageView.image = suggest.image
-            gameLink.text = suggest.link
-                title = "Edit Emoji" } else {
-                    title = "Add Emoji"
+            gameLink.text = suggest.genre
+            gameGenre.selectRow(3, inComponent: 0, animated: true)
+
+                title = "Edit Game" } else {
+                    title = "Add Game"
                     
                 }
         updateSaveButtonState()
 
     }
-    
+    func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        gameLink.text = pickerData[row]
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) { guard segue.identifier == "saveUnwind"
         else {
         return
@@ -95,8 +113,8 @@ class AddEdiitSuggestionsTableViewController: UITableViewController,  UIImagePic
         let name = gameName.text ?? "No Text"
         let rating =  gameRating.text ?? ""
         let image = imageView.image ?? #imageLiteral(resourceName: "CSGOcoverMarch2020")
-        let link = gameLink.text ?? ""
-        suggest = Suggestions(gameName: name, rating: rating, image: image, link: link)
+   let genre = gameLink.text ?? ""
+        suggest = Suggestions(gameName: name, rating: rating, image: image, genre: genre)
         
     }
     

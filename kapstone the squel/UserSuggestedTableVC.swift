@@ -10,7 +10,7 @@ import UIKit
 class UserSuggestedTableVC: UITableViewController {
 
     
-    var userSuggest:[Suggestions] = [Suggestions(gameName: "Counter Strike: Global Offense", rating: "M", image: #imageLiteral(resourceName: "CSGOcoverMarch2020"), link: "")]
+    var userSuggest:[Suggestions] = [Suggestions(gameName: "Counter Strike: Global Offense", rating: "M", image: #imageLiteral(resourceName: "CSGOcoverMarch2020"), genre:"")]
     override func viewDidLoad() {
         super.viewDidLoad()
 

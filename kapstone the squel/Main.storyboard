@@ -195,7 +195,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="suggestionCell" textLabel="Gfu-E4-FGi" detailTextLabel="1YS-Vp-oc9" style="IBUITableViewCellStyleSubtitle" id="B7a-32-T7X">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="suggestionCell" textLabel="Gfu-E4-FGi" detailTextLabel="1YS-Vp-oc9" style="IBUITableViewCellStyleSubtitle" id="B7a-32-T7X" customClass="UserSuggestionsTableViewCell" customModule="kapstone_the_squel" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B7a-32-T7X" id="uzr-ld-6X1">
@@ -626,7 +626,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="suggestionCell" textLabel="xvk-Xd-2zV" detailTextLabel="yn2-05-Etv" style="IBUITableViewCellStyleSubtitle" id="8zO-oK-1OP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="suggestionCell" textLabel="xvk-Xd-2zV" detailTextLabel="yn2-05-Etv" style="IBUITableViewCellStyleSubtitle" id="8zO-oK-1OP" customClass="UserSuggestionsTableViewCell" customModule="kapstone_the_squel" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8zO-oK-1OP" id="P5K-GF-SkE">
@@ -738,7 +738,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Link" id="0st-6W-nRm">
+                            <tableViewSection headerTitle="Rating" id="0st-6W-nRm">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="3N2-pO-zIp">
                                         <rect key="frame" x="0.0" y="533.5" width="414" height="43.5"/>
@@ -747,8 +747,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hze-6U-5E4">
-                                                    <rect key="frame" x="0.0" y="4" width="414" height="34"/>
+                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAz-AT-6k1">
+                                                    <rect key="frame" x="0.0" y="-59" width="414" height="162"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                </pickerView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Xoe-CL-Swj">
+                                        <rect key="frame" x="0.0" y="577" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xoe-CL-Swj" id="oXG-oy-PPf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xvL-Qi-pov">
+                                                    <rect key="frame" x="20" y="-2" width="394" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -777,7 +791,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="gameLink" destination="hze-6U-5E4" id="PaP-fc-n4W"/>
+                        <outlet property="gameGenre" destination="DAz-AT-6k1" id="bRA-G7-zLe"/>
+                        <outlet property="gameLink" destination="xvL-Qi-pov" id="hGC-bS-URr"/>
                         <outlet property="gameName" destination="2Da-Ye-A1v" id="hyt-JN-qL1"/>
                         <outlet property="gameRating" destination="YRF-t0-hFI" id="NxI-ce-NnD"/>
                         <outlet property="imageView" destination="ym8-ng-LZe" id="hqp-Mn-RRo"/>
