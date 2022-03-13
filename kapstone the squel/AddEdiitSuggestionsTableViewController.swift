@@ -23,7 +23,9 @@ class AddEdiitSuggestionsTableViewController: UITableViewController,  UIImagePic
     self.suggest = suggest
     super.init(coder:coder)
     }
-    
+    var selected: String{
+        return UserDefaults.standard.string(forKey: "selected") ?? ""
+    }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -86,14 +88,20 @@ class AddEdiitSuggestionsTableViewController: UITableViewController,  UIImagePic
     }
     override func viewDidLoad() {
         pickerData = ["Sandbox", "Shooters", "Multiplayer online battle arena (MOBA)", "Simulation", "Sports", "Action"]
+        
         gameGenre.delegate = self
         gameGenre.dataSource = self
-        if let suggest = suggest { gameName.text = suggest.gameName
+        
+       
+        if let suggest = suggest {
+            gameName.text = suggest.gameName
             gameRating.text = suggest.rating
             imageView.image = suggest.image
             gameLink.text = suggest.genre
-            gameGenre.selectRow(3, inComponent: 0, animated: true)
-
+            if let row = pickerData.firstIndex(of: suggest.genre){
+            gameGenre.selectRow(row, inComponent: 0, animated: true)
+            }
+           
                 title = "Edit Game" } else {
                     title = "Add Game"
                     
@@ -113,7 +121,7 @@ class AddEdiitSuggestionsTableViewController: UITableViewController,  UIImagePic
         let name = gameName.text ?? "No Text"
         let rating =  gameRating.text ?? ""
         let image = imageView.image ?? #imageLiteral(resourceName: "CSGOcoverMarch2020")
-   let genre = gameLink.text ?? ""
+        let genre = gameLink.text ?? ""
         suggest = Suggestions(gameName: name, rating: rating, image: image, genre: genre)
         
     }
