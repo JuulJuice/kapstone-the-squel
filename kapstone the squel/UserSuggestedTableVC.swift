@@ -10,12 +10,12 @@ import UIKit
 class UserSuggestedTableVC: UITableViewController {
 
     
-    var userSuggest:[Suggestions] = [Suggestions(gameName: "Counter Strike: Global Offense", rating: "M", image: #imageLiteral(resourceName: "CSGOcoverMarch2020"), link: "")]
+    var userSuggest:[Suggestions] = [Suggestions(gameName: "Counter Strike: Global Offense", rating: "M", image: #imageLiteral(resourceName: "CSGOcoverMarch2020"), genre:"Shooters")]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
-      //  self.navigationItem.leftBarButtonItem = self.editButtonItem
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 20
+    
     }
     
     @IBAction func unwindToUserSuggestionTable(segue: UIStoryboardSegue) {
@@ -53,19 +53,23 @@ class UserSuggestedTableVC: UITableViewController {
         return userSuggest.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "suggestionCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "suggestionCell", for: indexPath) as! UserSuggestionsTableViewCell
+       
 
+     
         let suggestions = userSuggest[indexPath.row]
 
-        var content = cell.defaultContentConfiguration()
+      //  var content = cell.defaultContentConfiguration()
 
-        content.text = "\(suggestions.gameName)"
-        content.image = suggestions.image
-
-
-        cell.contentConfiguration = content
+     //   content.text = "\(suggestions.gameName)"
+     //   content.image = suggestions.image
 
 
+      //  cell.contentConfiguration = content
+
+        cell.update(with: suggestions)
+        cell.showsReorderControl = true
+        
         return cell
     }
     
@@ -89,7 +93,6 @@ class UserSuggestedTableVC: UITableViewController {
         }    
     }
   
-
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
