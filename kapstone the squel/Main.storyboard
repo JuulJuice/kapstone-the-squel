@@ -386,73 +386,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="oIl-KZ-2zg">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="oIl-KZ-2zg">
                                 <rect key="frame" x="31" y="194" width="352" height="554"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-rE-adM">
-                                        <rect key="frame" x="0.0" y="0.0" width="352" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="K9z-j5-j0J">
-                                        <rect key="frame" x="0.0" y="110" width="352" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="352" height="124"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWc-SN-QMp">
-                                                <rect key="frame" x="0.0" y="0.0" width="155" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWc-SN-QMp">
+                                                <rect key="frame" x="0.0" y="41" width="155" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="155" id="RdM-OB-aZh"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z3z-sB-HkM">
-                                                <rect key="frame" x="179" y="0.0" width="173" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z3z-sB-HkM">
+                                                <rect key="frame" x="179" y="45" width="173" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qti-bK-u3J">
-                                        <rect key="frame" x="0.0" y="212" width="352" height="34"/>
+                                        <rect key="frame" x="0.0" y="195" width="352" height="42"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFD-uq-VdY">
-                                                <rect key="frame" x="0.0" y="0.0" width="154.5" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFD-uq-VdY">
+                                                <rect key="frame" x="0.0" y="0.0" width="154.5" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="155" id="9WB-Lt-rXo"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="KI7-AI-JC1"/>
                                                     <constraint firstAttribute="width" constant="154.5" id="bMK-bA-y4Q"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="87C-Oo-HrD">
-                                                <rect key="frame" x="178.5" y="0.0" width="173.5" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="87C-Oo-HrD">
+                                                <rect key="frame" x="178.5" y="4" width="173.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UC-96-vX0">
-                                        <rect key="frame" x="0.0" y="314" width="352" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UC-96-vX0">
+                                        <rect key="frame" x="0.0" y="308" width="352" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login">
+                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOa-fg-w6a">
-                                        <rect key="frame" x="0.0" y="413" width="352" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOa-fg-w6a">
+                                        <rect key="frame" x="0.0" y="410" width="352" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgj-6b-CgW">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgj-6b-CgW">
                                         <rect key="frame" x="0.0" y="523" width="352" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-rE-adM">
+                                <rect key="frame" x="31" y="124" width="352" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rj8-mk-nub"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -477,66 +482,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Tz-2X-7Lk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="3Dh-4R-rvJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Tz-2X-7Lk">
                                 <rect key="frame" x="31" y="202" width="352" height="580"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ps3-Dc-HQ4">
-                                        <rect key="frame" x="0.0" y="0.0" width="352" height="92"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="oSk-aM-RCM">
-                                        <rect key="frame" x="0.0" y="97" width="352" height="64.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="352" height="83"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWb-KG-wTA">
-                                                <rect key="frame" x="0.0" y="11.5" width="155" height="42"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="155" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="155" id="TkG-bb-2sN"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OyD-Fv-6St">
-                                                <rect key="frame" x="179" y="15.5" width="173" height="34"/>
+                                                <rect key="frame" x="179" y="24.5" width="173" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="1Ac-9w-zjK">
-                                        <rect key="frame" x="0.0" y="166.5" width="352" height="64.5"/>
+                                        <rect key="frame" x="0.0" y="84" width="352" height="83.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDL-VI-v74">
-                                                <rect key="frame" x="0.0" y="11" width="154.5" height="42"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="154.5" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="155" id="8eF-l7-mQf"/>
                                                     <constraint firstAttribute="width" constant="154.5" id="TvP-C7-aBA"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="ufO-Fv-bc9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6E-bk-j6c">
-                                                <rect key="frame" x="178.5" y="15" width="173.5" height="34"/>
+                                                <rect key="frame" x="178.5" y="24.5" width="173.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="sFj-1e-9Ey">
-                                        <rect key="frame" x="0.0" y="236" width="352" height="153.5"/>
+                                        <rect key="frame" x="0.0" y="168.5" width="352" height="197.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMq-VZ-lGO">
-                                                <rect key="frame" x="0.0" y="58.5" width="161.5" height="36"/>
+                                                <rect key="frame" x="0.0" y="81" width="177.5" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="d0p-H5-lGC">
-                                                <rect key="frame" x="187.5" y="26.5" width="164.5" height="100"/>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="d0p-H5-lGC">
+                                                <rect key="frame" x="203.5" y="49" width="148.5" height="100"/>
                                                 <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
                                                     <!--1970-01-01 11:00:00 +0000-->
                                                 </date>
@@ -547,29 +550,40 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxj-c3-XTR">
-                                        <rect key="frame" x="0.0" y="394.5" width="352" height="47.5"/>
+                                        <rect key="frame" x="0.0" y="367" width="352" height="61.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                                            <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="Iit-57-PnO"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcf-U6-xfP">
-                                        <rect key="frame" x="0.0" y="447" width="352" height="64.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcf-U6-xfP">
+                                        <rect key="frame" x="0.0" y="429.5" width="352" height="83"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcX-Aq-RRk">
-                                        <rect key="frame" x="0.0" y="516.5" width="352" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="513.5" width="352" height="66.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login">
+                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <segue destination="xB0-Fe-IJa" kind="show" id="Taw-Ck-ooY"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ps3-Dc-HQ4">
+                                <rect key="frame" x="31" y="126" width="352" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YPT-b3-HIt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
