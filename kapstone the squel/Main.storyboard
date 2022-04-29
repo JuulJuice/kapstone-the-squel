@@ -458,10 +458,6 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="jca-S0-rNw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rj8-mk-nub"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -537,13 +533,13 @@
                                         <rect key="frame" x="0.0" y="168.5" width="352" height="197.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMq-VZ-lGO">
-                                                <rect key="frame" x="0.0" y="81" width="193.5" height="36"/>
+                                                <rect key="frame" x="0.0" y="81" width="177.5" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="d0p-H5-lGC">
-                                                <rect key="frame" x="219.5" y="49" width="132.5" height="100"/>
+                                                <rect key="frame" x="203.5" y="49" width="148.5" height="100"/>
                                                 <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
                                                     <!--1970-01-01 11:00:00 +0000-->
                                                 </date>
@@ -1786,7 +1782,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="dNY-iL-oos"/>
-        <segue reference="Taw-Ck-ooY"/>
+        <segue reference="2GY-iW-XcM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="2560" height="1440"/>
