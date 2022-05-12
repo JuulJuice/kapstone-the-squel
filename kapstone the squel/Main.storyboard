@@ -71,7 +71,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="5al-L2-JjT">
-                                <rect key="frame" x="120" y="162.5" width="174" height="513.5"/>
+                                <rect key="frame" x="120" y="237.5" width="174" height="438.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qn9-CR-qr5">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="45.5"/>
@@ -80,7 +80,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="6lT-y9-5k2">
-                                        <rect key="frame" x="0.0" y="109.5" width="166" height="404"/>
+                                        <rect key="frame" x="0.0" y="109.5" width="166" height="329"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjW-HY-rvS">
                                                 <rect key="frame" x="0.0" y="0.0" width="166" height="74"/>
@@ -92,18 +92,8 @@
                                                     <segue destination="Vtz-Z9-xyI" kind="show" id="YOT-LV-Gkn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQ3-Fz-cSa">
-                                                <rect key="frame" x="0.0" y="105" width="166" height="44"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Groups">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="ep8-3e-d7I" kind="show" id="GJ7-DY-cnf"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGw-2n-BFX">
-                                                <rect key="frame" x="0.0" y="180" width="166" height="74"/>
+                                                <rect key="frame" x="0.0" y="105" width="166" height="74"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Communities">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
@@ -113,7 +103,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OC-G6-fMn">
-                                                <rect key="frame" x="0.0" y="285" width="166" height="44"/>
+                                                <rect key="frame" x="0.0" y="210" width="166" height="44"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Settings">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
@@ -123,7 +113,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4Q-iD-W6h">
-                                                <rect key="frame" x="0.0" y="360" width="166" height="44"/>
+                                                <rect key="frame" x="0.0" y="285" width="166" height="44"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Sign Out">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
@@ -137,15 +127,11 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Trollface_non-free" translatesAutoresizingMaskIntoConstraints="NO" id="MFQ-Rk-lNM">
-                                <rect key="frame" x="302" y="55" width="92" height="183"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uUh-yg-ORl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uUh-yg-ORl" firstAttribute="trailing" secondItem="5al-L2-JjT" secondAttribute="trailing" constant="120" id="7qg-pV-s64"/>
-                            <constraint firstItem="5al-L2-JjT" firstAttribute="top" secondItem="MFQ-Rk-lNM" secondAttribute="bottom" constant="80" id="RyR-nh-d6J"/>
                             <constraint firstItem="5al-L2-JjT" firstAttribute="leading" secondItem="uUh-yg-ORl" secondAttribute="leading" constant="120" id="iPF-f5-GxE"/>
                             <constraint firstItem="uUh-yg-ORl" firstAttribute="bottom" secondItem="5al-L2-JjT" secondAttribute="bottom" constant="186" id="uSN-0J-Do0"/>
                         </constraints>
@@ -154,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rA7-A7-hYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739" y="68"/>
+            <point key="canvasLocation" x="794" y="60"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="QPx-zV-3dN">
@@ -821,7 +807,7 @@
             <objects>
                 <viewController id="ep8-3e-d7I" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pdV-69-WAw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XYj-Za-7eN">
@@ -967,7 +953,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffH-c3-g1O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5705.7971014492759" y="60.9375"/>
+            <point key="canvasLocation" x="5414" y="550"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="IU9-S2-xY8">
@@ -1010,7 +996,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uM1-d7-JsZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6456.521739130435" y="59.598214285714285"/>
+            <point key="canvasLocation" x="6338" y="550"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8k8-HK-6CB">
@@ -1745,7 +1731,6 @@
     <resources>
         <image name="Image" width="1281" height="360"/>
         <image name="Image-1" width="1280" height="1259"/>
-        <image name="Trollface_non-free" width="220" height="183"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="photo" catalog="system" width="128" height="93"/>
