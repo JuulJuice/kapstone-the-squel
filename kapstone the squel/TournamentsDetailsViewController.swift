@@ -26,6 +26,9 @@ class TournamentsDetailsViewController: UIViewController {
         tDescription.text = "\((allTourneys.tournaments[indexpath].description))"
         
         tImage.image = ((allTourneys.tournaments[indexpath].image))
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.white //titles
+
     }
     
 

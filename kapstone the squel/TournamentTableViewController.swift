@@ -23,7 +23,12 @@ class TournamentTableViewController: UITableViewController {
     
     var mature = [listOfTournaments(type: "Mature", tournaments: [Tournament(name: "Rainbow Six Siege", description: "Rainbow Six Siege is a high-precision, tactical shooter that prioritises careful planning teamwork and finely tuned tactical play. Since its release in 2015, the game has radically expanded, adding extra maps, new operators, weapons, and themed seasonal events.", image: #imageLiteral(resourceName: "capsule_616x353(1)")), Tournament(name: "Mortal Kombat 11", description: "Mortal Kombat 11 is both the 11th fighting game and the 22nd installment in the Mortal Kombat series, developed by NetherRealm Studios, QLOC & Shiver and published by Warner Bros. Interactive Entertainment. It was released on April 23rd, 2019 for the PlayStation 4, Xbox One, Nintendo Switch, and Microsoft Windows via Steam.", image: #imageLiteral(resourceName: "SbTOirUJUZ3oNQG0eGDZAuCr"))])]
 
-    override func viewDidLoad() {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.tintColor = UIColor.black //titles
+
+    }
+        override func viewDidLoad() {
         super.viewDidLoad()
         //tourneyTable.dataSource = self
         //tourneyTable.delegate = self
@@ -32,6 +37,8 @@ class TournamentTableViewController: UITableViewController {
         tourneys.append(contentsOf: teen)
         tourneys.append(contentsOf: mature)
         
+        self.navigationController?.navigationBar.tintColor = UIColor.black //titles
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
